@@ -2,7 +2,7 @@
 <p>Please enter your URL here</p>
 
 <%= form_with model: @link, remote: true do |form| %>
-    <%= form.text_field :original_url %>
+    <%= form.text_field :original_url, placeholder: "Enter URL..."  %>
     <%= form.submit %>
 <% end %>
 
