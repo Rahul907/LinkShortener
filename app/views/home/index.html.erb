@@ -1,0 +1,11 @@
+<h1>Welcome to Short.com</h1>
+<p>Please enter your URL here</p>
+
+<%= form_with model: @link, remote: true do |form| %>
+    <%= form.text_field :original_url %>
+    <%= form.submit %>
+<% end %>
+
+<div id="short-link">
+
+</div>
